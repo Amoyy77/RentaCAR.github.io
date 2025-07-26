@@ -1,0 +1,90 @@
+/* About Us/Contact Page css */
+
+/* Fonts */
+body, h1, h2, h3 {
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+/* Navbar and Logo */
+.video-logo {
+  height: 130px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .video-logo {
+    height: 90px;
+  }
+}
+
+/* About Section Video */
+.about-video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* FAQ Accordion */
+.accordion-button {
+  font-weight: bold;
+}
+.accordion-body {
+  background-color: #f8f9fa;
+}
+
+/* Map */
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border: 0;
+}
+
+
+/* Contact Section */
+.contact-form-section {
+  background: linear-gradient(135deg, #0d6efd, #cc0000);
+  animation: gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.contact-form-section form {
+  background-color: #ffffff;
+}
+
+.animated-input {
+  border: 2px solid #ccc;
+  transition: all 0.3s ease-in-out;
+}
+
+.animated-input:focus {
+  border-color: #dc3545;
+  box-shadow: 0 0 10px rgba(220, 53, 69, 0.3);
+}
+
+/* Animated Footer */
+footer {
+  background: linear-gradient(135deg, #0d6efd, #cc0000);
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

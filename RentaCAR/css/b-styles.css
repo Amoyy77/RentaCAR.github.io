@@ -1,0 +1,73 @@
+/* Booking Page css */
+
+/* Fonts */
+body, h1, h2, h3 {
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+/* Navbar and Logo */
+.video-logo {
+  height: 130px !important;
+  width: auto !important;
+  object-fit: contain;
+  display: block;
+  margin-top: -25px;
+  margin-bottom: -25px;
+}
+
+@media (max-width: 768px) {
+  .video-logo {
+    height: 70px !important;
+    margin-top: -15px;
+    margin-bottom: -15px;
+  }
+}
+
+/* Hero Section */
+.bookings-hero {
+  background: url('../images/Booking.jpg') no-repeat center center;
+  background-size: cover;
+  height: 60vh;
+  position: relative;
+}
+
+.bookings-hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.bookings-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Cards */
+.card h5 {
+  font-weight: bold;
+}
+
+.card p {
+  margin-bottom: 0.5rem;
+}
+
+/* Alert message */
+.alert {
+  font-size: 1rem;
+}
+
+/* Animated Footer */
+footer {
+  background: linear-gradient(135deg, #0d6efd, #cc0000);
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
