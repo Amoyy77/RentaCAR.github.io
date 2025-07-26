@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Responsive Design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <link rel="stylesheet" href="css/login.css" />
+  <!-- Imports Boxicons For lock and user icon -->
+  <link 
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" 
+    rel="stylesheet"
+  />
+</head>
+
+<body class="login-body">
+  <!-- Back to Home Button -->
+  <a href="index.html" class="back-btn">&#8592; Back to Home</a>
+
+  <div class="wrapper">
+    <!-- Form submission redirects to index.html -->
+    <form action="index.html" method="GET">
+      <h1>Login</h1>
+
+      <!-- Input Fields -->
+      <div class="input-box">
+        <input
+          type="text"
+          placeholder="Username"
+          required
+          pattern=".{3,}"
+          title="Username must be at least 3 characters long"
+        />
+        <i class="bx bxs-user"></i>
+      </div>
+
+      <div class="input-box">
+        <input
+          type="password"
+          placeholder="Password"
+          required
+          pattern="^(?=.*[A-Z])(?=.*\W).{8,}$"
+          title="Password must be at least 8 characters, contain one uppercase letter, and one special character"
+        />
+        <i class="bx bxs-lock-alt"></i>
+      </div>
+
+      <div class="remember-forgot">
+        <label><input type="checkbox" /> Remember me</label>
+        <a href="#">Forgot password?</a>
+      </div>
+
+      <button type="submit" class="btn-login">Login</button>
+
+      <div class="register-link">
+        <p>
+          Don't have an account?
+          <a href="#">Register</a>
+        </p>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
